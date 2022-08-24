@@ -7,7 +7,7 @@ Requires terraform and AWS CLI. Also, I prefer to run "aws configure" and keep m
 ## Variables
 Make sure you set your region and namespace in the variables.tf before starting. It will prompt you for ip_address at runtime, or add --var "ip_address=yourhostinternetip" on the command line. This IP sets the allowed IP to use the proxies and sets the security groups in AWS to allow ssh and the proxy port. 
 
-Number of hosts is set in ec2/main.tf 
+Number of hosts is set in variables.tf
 
 ## TODO
 - Set more variables at command line.
