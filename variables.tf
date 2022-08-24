@@ -19,3 +19,9 @@ variable "proxy_port" {
   description = "Proxy port for incoming requests"
   default     = 8888
 }
+
+variable "instance_count" {
+  description = "Number of proxy instances to spawn"
+  type = number
+  default = 2
+}

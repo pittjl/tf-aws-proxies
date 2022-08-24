@@ -17,3 +17,7 @@ variable "sg_pub_id" {
 variable "ip_address" {
   type = string
 }
+
+variable "instance_count" {
+  type = number
+}

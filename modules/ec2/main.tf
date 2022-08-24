@@ -34,7 +34,7 @@ data "aws_ami" "ubuntu-2204" {
 // Configure the EC2 instance in a public subnet
 resource "aws_instance" "ec2_public" {
   // Number of instances
-  count = 4
+  count = var.instance_count
   // Other details
   ami                         = data.aws_ami.ubuntu-2204.id
   associate_public_ip_address = true
