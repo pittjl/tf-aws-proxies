@@ -17,3 +17,4 @@ Number of hosts is set in ec2/main.tf
 - https://github.com/bugbiteme/demo-tform-aws-vpc
 - https://www.ptimofeev.com/proxy-server-with-terraform-on-amazon-aws/
 - https://www.squadcast.com/blog/how-to-deploy-multiple-ec2-instances-in-one-go-using-terraform
+https://www.andreagrandi.it/2017/08/25/getting-latest-ubuntu-ami-with-terraform/
