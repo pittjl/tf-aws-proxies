@@ -9,6 +9,9 @@ Make sure you set your region and namespace in the variables.tf before starting.
 
 Number of hosts is set in variables.tf
 
+## Output
+- terraform output -json  public_ip_list | jq -r '.[]' > ip.txt
+
 ## TODO
 - Set more variables at command line.
 
