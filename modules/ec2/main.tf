@@ -87,7 +87,7 @@ resource "aws_instance" "ec2_public" {
 
 // copy up danted.conf because it's complicated
   provisioner "file" {
-    source      = "../../configs/danted.conf"
+    source      = "./configs/danted.conf"
     destination = "/etc/danted.conf"
 
     connection {
