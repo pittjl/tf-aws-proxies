@@ -46,7 +46,7 @@ resource "aws_instance" "ec2_public" {
   user_data = <<-EOF
   			  #!/bin/bash
   			  sudo apt update
-  			  sudo apt-get install tinyproxy -y
+  			  sudo apt-get install dante-server tinyproxy -y
   			  sudo echo "Allow ${var.ip_address}" >> /etc/tinyproxy/tinyproxy.conf
   			  sudo systemctl restart tinyproxy
   			  EOF 
@@ -85,4 +85,17 @@ resource "aws_instance" "ec2_public" {
 
   }
 
+// copy up danted.conf because it's complicated
+  provisioner "file" {
+    source      = "../../configs/danted.conf"
+    destination = "/etc/danted.conf"
+
+    connection {
+      type        = "ssh"
+//      user        = "ec2-user"
+	  user        = "ubuntu"
+      private_key = file("${var.key_name}.pem")
+      host        = self.public_ip
+    }
+  }
 }
