@@ -2,9 +2,9 @@
 Terraform scripts to generate multiple proxies. Uses tinyproxy for http and dante for socks proxy. 
 
 ## Open Ports
-tcp/22 - ssh
-tcp/1080 - socks proxy
-tcp/8888 - http proxy
+- tcp/22 - ssh
+- tcp/1080 - socks proxy
+- tcp/8888 - http proxy
 
 ## Requirements
 Requires terraform and AWS CLI. Also, I prefer to run "aws configure" and keep my creds that way, but you can use environment variables per the terraform docs. 
