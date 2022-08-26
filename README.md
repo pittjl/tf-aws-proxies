@@ -22,7 +22,7 @@ Number of hosts desired is set in variables.tf. The default is 2.
 - terraform init
 - terraform plan --var "ip_address=IPGOESHERE"
 - terraform apply
-- To remove infra - terraform destroy --var "ip_address=<your internet ip>
+- To remove infra - terraform destroy --var "ip_address=IPGOESHERE
 
 ## Output
 - terraform output -json  public_ip_list | jq -r '.[]' > ip.txt
@@ -36,3 +36,4 @@ Number of hosts desired is set in variables.tf. The default is 2.
 - https://www.ptimofeev.com/proxy-server-with-terraform-on-amazon-aws/
 - https://www.squadcast.com/blog/how-to-deploy-multiple-ec2-instances-in-one-go-using-terraform
 - https://www.andreagrandi.it/2017/08/25/getting-latest-ubuntu-ami-with-terraform/
+- https://www.digitalocean.com/community/tutorials/how-to-set-up-dante-proxy-on-ubuntu-20-04
