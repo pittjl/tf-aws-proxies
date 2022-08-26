@@ -20,7 +20,7 @@ Number of hosts desired is set in variables.tf. The default is 2.
 - Clone the repo
 - set variables as appropriate
 - terraform init
-- terraform plan --var "ip_address=IPGOESHERE
+- terraform plan --var "ip_address=IPGOESHERE"
 - terraform apply
 - To remove infra - terraform destroy --var "ip_address=<your internet ip>
 
